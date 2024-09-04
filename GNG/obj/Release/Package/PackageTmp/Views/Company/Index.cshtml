@@ -1,0 +1,271 @@
+﻿@{
+    ViewBag.Title = "Company";
+    ViewBag.Sub = "Index";
+
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+@section Container{
+    <style>
+        .root_daum_roughmap .wrap_controllers {display: none;}
+        .root_daum_roughmap_landing {width: 100%;}
+    </style>
+    <main class="container">
+        <section class="content">
+            <div class="sub-header">
+                <div class="sub-header__visual company">
+                    <div class="sub-header__title">
+                        <p>신뢰하는 나의 물류파트너,MY GNG</p>
+                        <p>회사소개</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="section-tab company">
+                    <div class="tab-area">
+                        <div class="tab on">
+                            <button type="button" data-target="#intro">
+                                <img src="~/Images/company/tab1_on.png" class="tab_on" />
+                                <img src="~/Images/company/tab1_off.png" class="tab_off" />
+                                회사개요
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" class="tab-br" data-target="#company">
+                                <img src="~/Images/company/tab3_on.png" class="tab_on" />
+                                <img src="~/Images/company/tab3_off.png" class="tab_off" />
+                                고객사/<br />협력사
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#history">
+                                <img src="~/Images/company/tab2_on.png" class="tab_on" />
+                                <img src="~/Images/company/tab2_off.png" class="tab_off" />
+                                연혁
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#location">
+                                <img src="~/Images/company/tab4_on.png" class="tab_on" />
+                                <img src="~/Images/company/tab4_off.png" class="tab_off" />
+                                오시는길
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="GNG-section">
+                <section class="GNG-item__box" id="intro" style="background:#f3f6f9;">
+                    <div class="contents company-item1">
+                        <div class="company-item1__img1"></div>
+                        <div class="company-item1__img2"></div>
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Company introduction</p>
+                                <p class="item__title__kr">회사개요</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>국내 최고의<br /><span>LCL 화물전용 CFS</span>를 추구합니다.</p>
+                            </div>
+                        </div>
+                        <div class="company-card__list">
+                            <div class="company-card-flex">
+                                <div class="company-card">
+                                    <div class="company-card__cont">
+                                        <p class="company-card__title">01.LCL CONSOL</p>
+                                        <p class="company-card__title_sub">
+                                            국내 해운시장에서 LCL CONSOL 화물을 가장 먼저,
+                                            ONE STOP SERVICE로 선보인 저희는 10년의 KNOW-HOW를 바탕으로
+                                            향후 물류의 중심이 될 신항만 배후단지에 최신의 설비를 갖춘 전용 CFS를 완공,
+                                            새로운 도약을 준비하고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="company-card">
+                                    <div class="company-card__cont">
+                                        <p class="company-card__title">02. T/S CARGO의 부가가치 창출</p>
+                                        <p class="company-card__title_sub">
+                                            단순 흘러가는 T/S화물이 아니라, 검사하고, 보수하고, 재포장하며, 방역 알선까지.
+                                            국내 최대의 LCL T/S CARGO HANDUNG하는 GNG는 가히 고객의 SERVICE 만족을
+                                            부가가치 창출로 조화롭게 승화시키고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-card-flex">
+                                <div class="company-card">
+                                    <div class="company-card__cont">
+                                        <p class="company-card__title">03.3PL (Third Party Logistics)</p>
+                                        <p class="company-card__title_sub">
+                                            최근 물류의 흐름이 점점 고객 중심으로 바뀌는 현상에 부응하고져
+                                            일본 남큐슈지방에 화물의 국내 유통 3PL 거점지로 활용하기 위한 영업이
+                                            현 일본지사(하다 소재)에서 추진중에 있으며 일부는 현재 작업이 진행되고 있는 실정입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="company-card">
+                                    <div class="company-card__cont">
+                                        <p class="company-card__title">04. SCM (Supply Chain Management)</p>
+                                        <p class="company-card__title_sub">
+                                            물류의 PACKAGE화에 부응하기 위한 일환으로 또한 3PL에 기본 틀을 확보하기 위해,
+                                            정보기술을 최대한 활용한 업무 자동화를 추진하여 불필요한 물류 활동을 최소화하고,
+                                            프로세스의 단순화와 표준화를 통한 SPEED SUPPLY CHAIN CONTROL을 지향하고
+                                            있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box" id="company">
+                    <div class="contents company-item2">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Company introduction</p>
+                                <p class="item__title__kr">고객사/협력사</p>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <img src="~/Images/company/img3.png" />
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box history" id="history">
+                    <div class="contents company-item3">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Company introduction</p>
+                                <p class="item__title__kr">연혁</p>
+                                <p class="item__title__sub">실존하는 LCL CONSOLIDATOR의 <br />전설입니다.</p>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-item-cont">
+                                <div class="history-list">
+                                    <p>1990 ~ 2006</p>
+                                    <div class="history-list__box">
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">1995년 10월 04일</p>
+                                            <p class="history-list__cont">(주)골드마린국제운송 법인설립</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">1999년 06월 20일</p>
+                                            <p class="history-list__cont">(주)골드웨이 상호 변경</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2001년 06월 11일</p>
+                                            <p class="history-list__cont">
+                                                (주)골드웨이 보세창고 설립(5부두 허치슨터미널)<br />
+                                                국내최초 수출/수입 및 환적 ONE STOP 서비스 실시
+                                            </p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2002년 11월 03일</p>
+                                            <p class="history-list__cont">(주)골드웨이 보세 창고 화재발생 140억 재산 피해</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2003년 08월 04일</p>
+                                            <p class="history-list__cont">(주)지티씨 C.F.S/CY 설립</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2005년 08월</p>
+                                            <p class="history-list__cont">중국 대련지사 설립</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2006년 04월</p>
+                                            <p class="history-list__cont">화재로 인한 법정소송 종결(약 40억 배상)</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2006년 10월 13일</p>
+                                            <p class="history-list__cont">
+                                                부산 신항배후물류부지 3단계 입주업체 선정을 위한 컨소시엄구성<br />
+                                                (주)지티씨/TIANJIN HUIHANG/(주)골드웨이
+                                            </p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2006년 10월 31일</p>
+                                            <p class="history-list__cont">부산신항배후물류부지 입주업체 선정</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-list">
+                                    <p>2007 ~ 2018</p>
+                                    <div class="history-list__box">
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2007년 11월 16일</p>
+                                            <p class="history-list__cont">(주)지앤지 설립</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2009년 09월</p>
+                                            <p class="history-list__cont">(주)지앤지 신항 물류센타 준공</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2010년 06월 08일</p>
+                                            <p class="history-list__cont">(주)지앤지 신항 물류센터 개장</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2010년 06월</p>
+                                            <p class="history-list__cont">
+                                                전세계 LCL CONSOL 수출/수입 및 환적(T/S) 서비스 개시
+                                            </p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2013년 12월 31일</p>
+                                            <p class="history-list__cont">보세구역운영인 AEO 취득(수출입안전관리우수업체)</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <p class="history-list__title">2018년 12월 31일</p>
+                                            <p class="history-list__cont">보세구역운영인 AEO 공인갱신</p>
+                                        </div>
+                                        <div class="history-list__box-cont">
+                                            <img src="~/Images/company/img5.png" class="history-list__box-cont__img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box location" id="location">
+                    <div class="contents company-item4">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Company introduction</p>
+                                <p class="item__title__kr">오시는 길</p>
+                                <p class="item__title__sub">경상남도 창원시 진해구 신항5로 15-10</p>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div id="daumRoughmapContainer1713155017813" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-box__tel">
+                                <p>수입</p>
+                                <div class="tel">
+                                    <p>TEL: 82-55-540-9000</p>
+                                    <p>TEL: 82-55-540-9001~2, 9009</p>
+                                </div>
+                            </div>
+                            <div class="item-box__tel">
+                                <p>수출</p>
+                                <div class="tel">
+                                    <p>TEL: 82-55-540-9090</p>
+                                    <p>TEL: 82-55-540-9091~2</p>
+                                </div>
+                            </div>
+                            <div class="item-box__tel">
+                                <p>관리</p>
+                                <div class="tel">
+                                    <p>TEL: 82-55-540-9016</p>
+                                    <p style="visibility:hidden;">.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script src="~/Scripts/Company/company.js"></script>
+}

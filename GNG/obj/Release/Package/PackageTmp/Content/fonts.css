@@ -1,0 +1,17 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: 'KOHI';
+    src: url(./fonts/KOHIBaeum.woff2) format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(./fonts/NotoSansKR-Regular.woff2) format('woff2');
+    font-style: normal;
+}
+/*@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(./fonts/NotoSansKR-Medium.woff) format('woff');
+    font-style: normal;
+}*/

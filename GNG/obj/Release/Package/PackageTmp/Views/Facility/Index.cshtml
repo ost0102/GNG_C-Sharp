@@ -1,0 +1,449 @@
+﻿@{
+    ViewBag.Title = "Facility";
+    ViewBag.Sub = "Index";
+
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+@section Container{
+
+    <main class="container">
+        <section class="content">
+            <div class="sub-header">
+                <div class="sub-header__visual facility">
+                    <div class="sub-header__title">
+                        <p>신뢰하는 나의 물류파트너,MY GNG</p>
+                        <p>시설/장비</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="section-tab facility">
+                    <div class="tab-area">
+                        <div class="tab on">
+                            <button type="button" data-target="#facility">
+                                <img src="~/Images/facility/tab1_on.png" class="tab_on" />
+                                <img src="~/Images/facility/tab1_off.png" class="tab_off" />
+                                시설현황
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#equipment">
+                                <img src="~/Images/facility/tab2_on.png" class="tab_on" />
+                                <img src="~/Images/facility/tab2_off.png" class="tab_off" />
+                                장비현황
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#etc">
+                                <img src="~/Images/facility/tab3_on.png" class="tab_on" />
+                                <img src="~/Images/facility/tab3_off.png" class="tab_off" />
+                                기타현황
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="GNG-section">
+                <section class="GNG-item__box facility" id="facility">
+                    <div class="contents" style="position:unset;">
+                        <div class="facility-item">
+                            <div class="facility-item__box">
+                                <div class="item__box__txt">
+                                    <div class="item__box__title">
+                                        <p class="item__title__eng">facility & Equipment</p>
+                                        <p class="item__title__kr">시설현황</p>
+                                    </div>
+                                    <div class="item__box__title_sub">
+                                        <p>
+                                            부산신항만 <span>'북'컨테이너</span><br /><span>배후물류단지 3단계내</span>에<br />5,500평을 확보하고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="facility-slider__item">
+                                    <div class="facility-slider">
+                                        <div class="facility-slider-wrapper" id="FacilitySlider">
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img facility-img1"></div>
+                                                <p>물류창고</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img facility-img2"></div>
+                                                <p>사무동</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img facility-img3"></div>
+                                                <p>위험물저장창고, 경비동</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="indicator">
+                                        <button class="slick-arrow facility-prevArrow"><img src="~/Images/button/left.png" /></button>
+                                        <button class="slick-arrow facility-nextArrow"><img src="~/Images/button/right.png" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facility-item">
+                            <table class="facility-table facility-table1">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="50%" />
+                                    <col width="25%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구 분</th>
+                                        <th>내 용</th>
+                                        <th>비 고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>부지면적</td>
+                                        <td>18,181.80 ㎡(5,500평)</td>
+                                        <td>W158m X D115m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>건축면적</td>
+                                        <td>6,394.52 ㎡(1,935평)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>연면적</td>
+                                        <td>11,067.92 ㎡(3,348평)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>건폐율</td>
+                                        <td>35.17%</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>용적율</td>
+                                        <td>60.87%</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>주요구조</td>
+                                        <td>철골조 및 철근콘크리트조</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>층수</td>
+                                        <td>
+                                            물류창고-지상2층, 사무동-지상4층,<br />
+                                            위험물저장창고,경비동-지상1층
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>물류창고 면적</td>
+                                        <td>
+                                            9,656.11 ㎡(2,921평),<br />
+                                            1층-5,550.00 ㎡(1,679평),<br />
+                                            2층-4,106.11 ㎡(1,242평)
+                                        </td>
+                                        <td>
+                                            1층 층고 - 8.0 m<br />
+                                            2층 층고 - 7.5 m
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOCK SYSTEM</td>
+                                        <td>수출,입 작업의 효율성 향상</td>
+                                        <td>9대 동시 작업가능</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위험물 저장창고	</td>
+                                        <td>337.50 ㎡(102평)</td>
+                                        <td>별동 위치(메인 출입구 연계)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>사무동 면적</td>
+                                        <td>1,011.76 ㎡(306평)</td>
+                                        <td>물류창고와 연계</td>
+                                    </tr>
+                                    <tr>
+                                        <td>경비동 면적</td>
+                                        <td>62.55 ㎡(19평)</td>
+                                        <td>별동 위치</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주차장 면적</td>
+                                        <td>850.50㎡(257평)	</td>
+                                        <td>
+                                            승용-37대(장애인주차2대 포함)<br />
+                                            화물차-9대
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>조경 면적</td>
+                                        <td>261.00㎡(80평)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>출입구</td>
+                                        <td>메인 출입구 1곳</td>
+                                        <td>경비동 연계</td>
+                                    </tr>
+                                    <tr>
+                                        <td>울타리</td>
+                                        <td>메탈 휀스</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box facility" id="equipment">
+                    <div class="contents" style="position:unset;">
+                        <div class="facility-item">
+                            <div class="facility-item__box">
+                                <div class="item__box__txt">
+                                    <div class="item__box__title">
+                                        <p class="item__title__eng">facility & Equipment</p>
+                                        <p class="item__title__kr">장비현황</p>
+                                    </div>
+                                    <div class="item__box__title_sub">
+                                        <p>
+                                            고객님의 물류를<br /><span>안전하고 신속하게</span> 책임지기 위해<br />각종장비들을 보유하고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="facility-slider__item">
+                                    <div class="facility-slider">
+                                        <div class="facility-slider-wrapper" id="EquipmentSlider">
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img equipment-img1"></div>
+                                                <p>리치스태커</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img equipment-img2"></div>
+                                                <p>수직반송기</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img equipment-img3"></div>
+                                                <p>지게차</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="indicator">
+                                        <button class="slick-arrow equipment-prevArrow"><img src="~/Images/button/left.png" /></button>
+                                        <button class="slick-arrow equipment-nextArrow"><img src="~/Images/button/right.png" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facility-item">
+                            <table class="facility-table facility-table2">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="75%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구 분</th>
+                                        <th>내 용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            리치스태커<br />
+                                            (REACH STACKER)
+                                        </td>
+                                        <td>컨테이너 상,하차에 사용(1대 x 45ton)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            지게차<br />
+                                            (FORK LIFT)
+                                        </td>
+                                        <td>
+                                            보유수량19대 : 전동지게차-5대(1.5ton, 2.5ton),<br />
+                                            일반지게차-14대(3ton, 3.3ton, 3.5ton, 4ton, 4.5ton, 15ton)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>파렛트 렉(RACK)	</td>
+                                        <td>2단적재용, 4단적재용, 배송용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>화물승강기</td>
+                                        <td>1대(7ton)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수직반송기</td>
+                                        <td>1대(2ton)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>진공청소기</td>
+                                        <td>1대</td>
+                                    </tr>
+                                    <tr>
+                                        <td>플라스틱 파렛트</td>
+                                        <td>1,500개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>자바라 컨테이너</td>
+                                        <td>3대</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box facility" id="etc">
+                    <div class="contents" style="position:unset;">
+                        <div class="facility-item">
+                            <div class="facility-item__box">
+                                <div class="item__box__txt">
+                                    <div class="item__box__title">
+                                        <p class="item__title__eng">facility & Equipment</p>
+                                        <p class="item__title__kr">기타현황</p>
+                                    </div>
+                                    <div class="item__box__title_sub">
+                                        <p>
+                                            <span>직원들의 편의를 존중</span>하는<br />시설들로 업무능률 향상에<br /> 도움을 주고있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="facility-slider__item">
+                                    <div class="facility-slider">
+                                        <div class="facility-slider-wrapper" id="EtcSlider">
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img1"></div>
+                                                <p>건축물</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img4"></div>
+                                                <p>건축물</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img5"></div>
+                                                <p>건축물</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img6"></div>
+                                                <p>건축물</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img7"></div>
+                                                <p>건축물</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img2"></div>
+                                                <p>시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img8"></div>
+                                                <p>시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img9"></div>
+                                                <p>시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img10"></div>
+                                                <p>시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img16"></div>
+                                                <p>CCTV 무인경비시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img11"></div>
+                                                <p>휀스</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img3"></div>
+                                                <p>직원편의시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img12"></div>
+                                                <p>직원편의시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img13"></div>
+                                                <p>직원편의시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img14"></div>
+                                                <p>직원편의시설</p>
+                                            </div>
+                                            <div class="facility-slider-wrapper__item">
+                                                <div class="facility-slider_img etc-img15"></div>
+                                                <p>직원편의시설</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="indicator">
+                                        <button class="slick-arrow etc-prevArrow"><img src="~/Images/button/left.png" /></button>
+                                        <button class="slick-arrow etc-nextArrow"><img src="~/Images/button/right.png" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facility-item">
+                            <table class="facility-table facility-table1">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="50%" />
+                                    <col width="25%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구 분</th>
+                                        <th>내 용</th>
+                                        <th>비 고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>사무동 면적</td>
+                                        <td>1,011.76 ㎡(306평)</td>
+                                        <td>물류창고와 연계</td>
+                                    </tr>
+                                    <tr>
+                                        <td>경비동 면적</td>
+                                        <td>62.55 ㎡(19평)</td>
+                                        <td>별동 위치</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주차장 면적</td>
+                                        <td>850.50㎡(257평)</td>
+                                        <td>
+                                            승용-37대(장애인주차2대 포함)<br />
+                                            화물차-9대
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>조경 면적</td>
+                                        <td>261.00㎡(80평)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>출입구</td>
+                                        <td>메인 출입구 1곳</td>
+                                        <td>경비동 연계</td>
+                                    </tr>
+                                    <tr>
+                                        <td>울타리</td>
+                                        <td>메탈 휀스</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <link rel="stylesheet" href="~/Content/Css/slick-theme.css" />
+    <link rel="stylesheet" href="~/Content/Css/slick.css" />
+    <script src="~/Scripts/API/slick.min.js"></script>
+    <script src="~/Scripts/Facility/Facility.js"></script>
+}

@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="GNG">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="GNG">
+    <meta property="og:image" content="/Images/og_img.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet" href="~/Content/fonts.css">
+    <link rel="stylesheet" href="~/Content/Css/slick-theme.css" />
+    <link rel="stylesheet" href="~/Content/Css/slick.css" />
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/Common.js"></script>
+    <script src="~/Scripts/API/slick.js"></script>
+    <title>GNG</title>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <header class="header">
+            <div class="header-inner">
+                <div class="header-inner__cont">
+                    <a href="/" class="header-inner__logo">
+                        <img src="~/Images/home/logo.png" />
+                    </a>
+                    <div class="header-inner__menu">
+                        @{
+                            if (ViewBag.MENU1 == "Company")
+                            {
+                                <a href="/Company" class="on">회사소개</a>
+                            }
+                            else
+                            {
+                                <a href="/Company" class="off">회사소개</a>
+                            }
+                            if (ViewBag.MENU2 == "Business")
+                            {
+                                <a href="/Business" class="on">사업분야</a>
+                            }
+                            else
+                            {
+                                <a href="/Business" class="off">사업분야</a>
+                            }
+                            if (ViewBag.MENU3 == "Facility")
+                            {
+                                <a href="/Facility" class="on">시설/장비</a>
+                            }
+                            else
+                            {
+                                <a href="/Facility" class="off">시설/장비</a>
+                            }
+                        }
+                        <a href="http://wms.mygng.kr/" target="_blank" style="color:#18458f">반입현황조회</a>
+                        <div class="hamburger" id="hamburger">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside class="nav-mobile">
+            <div class="nav-mobile__header">
+                <a href="/"><img src="~/Images/home/logo.png" /></a>
+                <p></p>
+            </div>
+            <div class="nav-mobile__body">
+                @{
+                    if (ViewBag.MENU1 == "Company")
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Company" class="on">회사소개</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Company" class="off">회사소개</a>
+                        </div>
+                    }
+                    if (ViewBag.MENU2 == "Business")
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Business" class="on">사업분야</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Business" class="off">사업분야</a>
+                        </div>
+                    }
+                    if (ViewBag.MENU3 == "Facility")
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Facility" class="on">시설/장비</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="nav-mobile__body__menu">
+                            <a href="/Facility" class="off">시설/장비</a>
+                        </div>
+                    }
+                }
+                <div class="nav-mobile__body__menu">
+                    <a href="http://wms.mygng.kr/" target="_blank" style="color:#18458f">반입현황조회</a>
+                </div>
+            </div>
+        </aside>
+        @RenderSection("container", required: false)
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-inner">
+                <div class="footer-inner__etc">
+                    <a href="~/Content/GNP BUS.zip" download="GNG_GNP BUS">E-Brochure<img src="~/Images/button/download.png" /></a>
+                    <a href="/Company/index#location">찾아오는 길 Location</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-inner">
+                <div class="footer-inner__tel">
+                    <div class="footer__tel">
+                        <p class="tel__title__sort">수입</p>
+                        <div class="tel">
+                            <p>TEL : 055-540-9000</p>
+                            <p>FAX : 055-540-9001~2, 9009</p>
+                        </div>
+                    </div>
+                    <div class="footer__tel">
+                        <p class="tel__title__sort">수출</p>
+                        <div class="tel">
+                            <p>TEL : 055-540-9090</p>
+                            <p>FAX : 055-540-9091~2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__addr__copy">
+                    <p>경상남도 창원시 진해구 신항5로 15-10</p>
+                    <p>Copyright © GNG CO.,LTD. All Rights Reserved.</p>
+                </div>
+                <button type="button" class="top-btn">
+                    <img src="~/Images/button/top.png" />
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

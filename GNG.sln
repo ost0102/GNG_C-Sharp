@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNG", "GNG\GNG.csproj", "{2F80C2EC-4227-4751-B680-8A3000A13379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F80C2EC-4227-4751-B680-8A3000A13379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F80C2EC-4227-4751-B680-8A3000A13379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F80C2EC-4227-4751-B680-8A3000A13379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F80C2EC-4227-4751-B680-8A3000A13379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA15AFC4-F510-4B78-8004-62E1FFD74209}
+	EndGlobalSection
+EndGlobal

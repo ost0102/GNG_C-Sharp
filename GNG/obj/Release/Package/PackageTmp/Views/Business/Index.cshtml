@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "Business";
+    ViewBag.Sub = "Index";
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+@section Container{
+    <script>
+        $(document).ready(function () {
+            $(".tab button").on("click", function () {
+                // 모든 탭의 클래스를 'off'로 설정하고, 클릭된 탭만 'on'으로 설정
+                $(".tab").addClass("off").removeClass("on");
+                $(this).parent().addClass("on").removeClass("off");
+
+                //클릭된 버튼의 data-target 속성에서 섹션 ID를 가져옴
+                var target = $(this).attr("data-target");
+
+                // 해당 섹션으로 스크롤 이동
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top - 150
+                }, 500);
+            });
+        });
+    </script>
+    <main class="container">
+        <section class="content">
+            <div class="sub-header">
+                <div class="sub-header__visual business">
+                    <div class="sub-header__title">
+                        <p>신뢰하는 나의 물류파트너,MY GNG</p>
+                        <p>사업분야</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="section-tab business">
+                    <div class="tab-area">
+                        <div class="tab on">
+                            <button type="button" data-target="#nvocc">
+                                <img src="~/Images/business/tab1_on.png" class="tab_on" />
+                                <img src="~/Images/business/tab1_off.png" class="tab_off" />
+                                N.V.O.C.C
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#container">
+                                <img src="~/Images/business/tab2_on.png" class="tab_on" />
+                                <img src="~/Images/business/tab2_off.png" class="tab_off" />
+                                물류보관
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#3pl">
+                                <img src="~/Images/business/tab3_on.png" class="tab_on" />
+                                <img src="~/Images/business/tab3_off.png" class="tab_off" />
+                                3PL
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#packaging">
+                                <img src="~/Images/business/tab4_on.png" class="tab_on" />
+                                <img src="~/Images/business/tab4_off.png" class="tab_off" />
+                                포장
+                            </button>
+                        </div>
+                        <div class="tab off">
+                            <button type="button" data-target="#label">
+                                <img src="~/Images/business/tab5_on.png" class="tab_on" />
+                                <img src="~/Images/business/tab5_off.png" class="tab_off" />
+                                라벨링
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="GNG-section">
+                <section class="GNG-item__box business" id="nvocc">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Business</p>
+                                <p class="item__title__kr">N.V.O.C.C</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>
+                                    국내유일 <span>NUTRUAL CONSOLIDATOR</span>로써 오직 FORWARDER만을 위한 사업 지향<br />
+                                    <span>상향진화를 모토로 물류에 새로운 장</span>을 개척하고 일체의 실화주 SALE를 하지 않는 순수 중립형 NVOCC를 고수합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-item1">
+                        <div class="business-item1__box">
+                            <div class="business-item1__box-cont">
+                                <div class="business-item1__box_card1">
+                                    <p>단일 CFS WED을 통한<br />유럽형 N.V.O.C.C</p>
+                                </div>
+                                <div class="business-item1__box_card2">
+                                    <p>국제복합운송</p>
+                                    <p>해상수출운송</p>
+                                    <p>LCL콘솔 서비스</p>
+                                    <p>PROJECT CARGO 서비스</p>
+                                    <p>컨테이너 운송</p>
+                                    <p>포장/방역 서비스</p>
+                                    <p>수출입 통관 대행</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box business" id="container">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Business</p>
+                                <p class="item__title__kr">물류보관</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>
+                                    부산신항 자유무역지역 내 <span>현대식 복층 창고를 구축,</span><br />
+                                    <span>쾌적한 환경과 WMS(창고관리시스템) 관리</span>를 통한 빈틈없는 서비스로 고객들의 한결같은 성원에 보답하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-item2">
+                        <div class="business-item2__box">
+                            <div class="business-item2__box-cont">
+                                <div class="business-item2__box_card">
+                                    <div class="business-item2__box_card-flex">
+                                        <p>수출입 화물의 보관 및<br />관리 서비스</p>
+                                        <p>CY 서비스</p>
+                                    </div>
+                                    <div class="business-item2__box_card-flex">
+                                        <p>위험물 보관/<br />관리 서비스</p>
+                                        <p>장기 전시용품 및<br />BW 화물의 보관/관리서비스 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box business" id="3pl">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Business</p>
+                                <p class="item__title__kr">3PL</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>
+                                    <span>부산신항이라는 천혜의 입지조건을</span> 바탕으로<br />
+                                    일본 북규슈 지방 및 전 일본 기업을 대상으로 하는  3자물류 상품을 개발, 국내 및 일본에 그 서비스를 제공합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-item3">
+                        <div class="business-item3__box pc">
+                            <div class="business-item3__box-cont">
+                                <div class="business-item3__box_card-cont">
+                                    <div class="business-item3__box_card">
+                                        <img src="~/Images/business/3pl_pc.png" />
+                                        <p class="business-item3__card-title">3PL</p>
+                                        <p class="card__circle circle1">재고관리<br />서비스</p>
+                                        <p class="card__circle circle2">라벨링<br />서비스</p>
+                                        <p class="card__circle circle3">PACKING<br />서비스</p>
+                                        <p class="card__circle circle4">배송<br />서비스</p>
+                                        <p class="card__circle circle5">사후관리<br />서비스</p>
+                                        <p class="card__circle circle6">SCM확충 및<br />SCM솔루션<br />개발 서비스</p>
+                                        <p class="card__notice">※ Supply Chain Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-item3__box mo">
+                            <img src="~/Images/business/3pl_mo.jpg" />
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box business" id="packaging">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Business</p>
+                                <p class="item__title__kr">포장</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>
+                                    국내 수출화물 및 T/S 화물의 국내외 화주에 요청에 따른 <span>안전하고 견고한 포장작업</span>으로 화주에 긴급한 요구에 부응하고 있습니다.<br />
+                                    또한 고부가가치를 창출하기 위한 방안으로, 파렛트 포장, 목재포장, 스키드 포장 등 다양한 포장기기를 이용한 포장 SYSTEM을 구축하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-item4">
+                        <div class="business-item4__box">
+                        </div>
+                    </div>
+                </section>
+                <section class="GNG-item__box business" id="label">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Business</p>
+                                <p class="item__title__kr">라벨링</p>
+                            </div>
+                            <div class="item__box__title_sub">
+                                <p>
+                                    3PL(3자물류) 분야와 관련된 소량 단품의 라벨링 작업 및 택배 송품 라벨링 작업과 다양한 종류의 전산화된 라벨기기를 이용한 라벨링 업무를 수행하고,
+                                    특성에 맞는 라벨기기를 개발, 겸비하여 <span>3PL에 관한 다양한 라벨링 경험을 구축</span>하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-item5">
+                        <div class="business-item5__box">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="~/Scripts/Business/Business.js"></script>
+}

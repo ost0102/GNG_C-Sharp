@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Container{
+    <main class="container">
+        <section class="content" style="background:#f3f6f9;">
+            <div class="main-contents">
+                <img src="~/Images/home/slogan.png" class="slogan" />
+                @*<div class="slogan">
+                <p>신뢰하는 나의 물류파트너,</p>
+                <p>MY GNG</p>
+            </div>*@
+            </div>
+            <div class="main-contents__menu">
+                <div class="home-contents__menu">
+                    <p class="home-contents__menu__title">Trusted logistics partner,<span>My GNG</span></p>
+                    <div class="home-contents__menu__card">
+                        <div class="menu__card-list">
+                            <div class="menu__card" id="Company">
+                                <div class="card__img card1"></div>
+                                <div class="menu__card__title">
+                                    <p>회사소개</p>
+                                    <a><img src="~/Images/button/right.png" /></a>
+                                </div>
+                            </div>
+                            <div class="menu__card" id="Business">
+                                <div class="card__img card2"></div>
+                                <div class="menu__card__title">
+                                    <p>사업분야</p>
+                                    <a><img src="~/Images/button/right.png" /></a>
+                                </div>
+                            </div>
+                            <div class="menu__card" id="Facility">
+                                <div class="card__img card3"></div>
+                                <div class="menu__card__title">
+                                    <p>시설/장비</p>
+                                    <a><img src="~/Images/button/right.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-btn">
+                        <button type="button"><img src="~/Images/home/home_img5.png" />반입현황조회</button>
+                    </div>
+                </div>
+            </div>
+            <section class="GNG-item__box inquiry" id="contact">
+                <div class="company-item5">
+                    <div class="contents">
+                        <div class="item__box__txt">
+                            <div class="item__box__title">
+                                <p class="item__title__eng">Contact us</p>
+                                <p class="item__title__kr">문의하기</p>
+                            </div>
+                        </div>
+                        <div class="inquiry-item">
+                            <div class="inquiry-item__info">
+                                <div class="inquiry-item__box col1">
+                                    <div class="inquiry-item__col">
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">회사명</span>
+                                            <input type="text" id="CUST" placeholder="회사명을 입력하세요" />
+                                        </div>
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">고객명</span>
+                                            <input type="text" id="USER" placeholder="고객명을 입력하세요" />
+                                        </div>
+                                    </div>
+                                    <div class="inquiry-item__col">
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">연락처</span>
+                                            <input type="text" id="TEL" placeholder="연락처를 입력하세요" maxlength="13" />
+                                        </div>
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">이메일</span>
+                                            <input type="text" id="EMAIL" placeholder="이메일을 입력하세요" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inquiry-item__box col2">
+                                    <div class="inquiry-item__col">
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">제목</span>
+                                            <input type="text" id="TITLE" placeholder="제목을 입력하세요" />
+                                        </div>
+                                        <div class="inquiry-item__input">
+                                            <span class="inquiry-item__input__title">내용</span>
+                                            <textarea id="CONTENTS" placeholder="내용을 입력하세요"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="agree">
+
+                                </div>
+                                <div class="inquiry_btn">
+                                    <button type="button" id="confirm_btn">문의하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <script src="~/Scripts/Home/home.js"></script>
+}
